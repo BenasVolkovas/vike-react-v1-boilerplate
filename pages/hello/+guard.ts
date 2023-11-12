@@ -12,5 +12,5 @@ const guard: GuardAsync = async (pageContext): ReturnType<GuardAsync> => {
 };
 
 function sleep(milliseconds: number): Promise<void> {
-    return new Promise((r) => setTimeout(r, milliseconds));
+    return new Promise(r => setTimeout(r, milliseconds));
 }

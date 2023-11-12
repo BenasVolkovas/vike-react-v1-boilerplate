@@ -8,9 +8,7 @@ import { PageShell } from "./PageShell";
 import { getPageTitle } from "./getPageTitle";
 import type { OnRenderHtmlAsync } from "vike/types";
 
-const onRenderHtml: OnRenderHtmlAsync = async (
-    pageContext
-): ReturnType<OnRenderHtmlAsync> => {
+const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRenderHtmlAsync> => {
     const { Page, pageProps } = pageContext;
 
     const stream = await renderToStream(
